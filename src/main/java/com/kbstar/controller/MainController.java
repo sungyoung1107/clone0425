@@ -16,4 +16,9 @@ public class MainController {
         model.addAttribute("center", "charts");
         return "index";
     }
+    @RequestMapping("/livechart")
+    public String livechart(Model model) {
+        model.addAttribute("center", "livechart");
+        return "index";
+    }
 }
